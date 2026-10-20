@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { getStateExploreUrl } from '../data/indiaData';
 import './StatePanel.css';
 
 const panelVariants = {
@@ -19,6 +20,11 @@ const childVariant = {
 
 export default function StatePanel({ stateName, data, onClose }) {
   if (!data) return null;
+
+  const handleDiscover = () => {
+    const url = getStateExploreUrl(stateName, data);
+    window.open(url, '_blank', 'noopener,noreferrer');
+  };
 
   return (
     <motion.div
@@ -96,12 +102,14 @@ export default function StatePanel({ stateName, data, onClose }) {
           <motion.button
             className="panel-cta"
             id={`discover-${stateName.toLowerCase().replace(/\s/g,'-')}-btn`}
+            onClick={handleDiscover}
+            title={`Read comprehensive cultural documentation on ${stateName}`}
             whileHover={{ scale: 1.02 }}
             whileTap={{ scale: 0.98 }}
             transition={{ duration: 0.2 }}
           >
             <span>Discover {stateName}</span>
-            <span className="panel-cta-arrow">→</span>
+            <span className="panel-cta-arrow">↗</span>
           </motion.button>
         </motion.div>
 

@@ -540,6 +540,27 @@ export function getStateData(name) {
   return null;
 }
 
+export function getStateExploreUrl(stateName, stateData) {
+  if (stateData?.exploreUrl) return stateData.exploreUrl;
+
+  const overrides = {
+    "Dadra and Nagar Haveli": "https://en.wikipedia.org/wiki/Dadra_and_Nagar_Haveli_and_Daman_and_Diu",
+    "Daman and Diu": "https://en.wikipedia.org/wiki/Dadra_and_Nagar_Haveli_and_Daman_and_Diu",
+    "Lakshadweep": "https://en.wikipedia.org/wiki/Lakshadweep",
+    "Puducherry": "https://en.wikipedia.org/wiki/Puducherry",
+    "Andaman and Nicobar Islands": "https://en.wikipedia.org/wiki/Andaman_and_Nicobar_Islands",
+    "Andaman & Nicobar Islands": "https://en.wikipedia.org/wiki/Andaman_and_Nicobar_Islands",
+    "Chandigarh": "https://en.wikipedia.org/wiki/Chandigarh"
+  };
+
+  if (stateName && overrides[stateName]) {
+    return overrides[stateName];
+  }
+
+  const canonical = (stateName || '').replace(/&/g, 'and').trim().replace(/\s+/g, '_');
+  return `https://en.wikipedia.org/wiki/Culture_of_${encodeURIComponent(canonical)}`;
+}
+
 
 export const artFormsGallery = [
   {
