@@ -54,7 +54,7 @@ export default function Storytelling() {
       gsap.fromTo('.chapter-progress-line',
         { scaleX: 0 },
         { scaleX: 1, duration: 1.5, ease: 'power3.inOut',
-          scrollTrigger: { trigger: '.storytelling-section', start: 'top 50%', end: 'bottom 50%', scrub: 1 } }
+          scrollTrigger: { trigger: sectionRef.current, start: 'top 50%', end: 'bottom 50%', scrub: 1 } }
       );
 
     }, sectionRef);
