@@ -1,0 +1,49 @@
+.india-map-container {
+  position: relative;
+  width: 100%;
+}
+
+.map-glow {
+  position: absolute;
+  inset: -40px;
+  background: radial-gradient(ellipse at center, rgba(184,154,98,0.05) 0%, transparent 70%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.india-svg {
+  width: 100%;
+  height: auto;
+  opacity: 0;
+  position: relative;
+  z-index: 1;
+  filter: drop-shadow(0 0 30px rgba(0,0,0,0.6));
+}
+
+.state-path {
+  transition: fill 0.25s ease, stroke 0.25s ease, filter 0.25s ease;
+}
+
+.state-path--clickable {
+  cursor: pointer;
+}
+
+.state-path--clickable:hover {
+  filter: brightness(1.3);
+}
+
+.state-path--selected {
+  filter: drop-shadow(0 0 8px rgba(184,154,98,0.6));
+}
+
+.state-label-text {
+  user-select: none;
+  pointer-events: none;
+  font-size: 7px;
+}
+
+/* Tooltip - handled via CSS for performance */
+.state-path--clickable:hover + .state-tooltip {
+  opacity: 1;
+  transform: translateY(0);
+}

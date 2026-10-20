@@ -1,0 +1,17 @@
+/* ============================================
+   KALĀ — App Styles
+   ============================================ */
+
+.app-container {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden;
+  background-color: var(--bg-deep);
+  color: var(--text-primary);
+}
+
+main {
+  position: relative;
+  z-index: 1;
+}
