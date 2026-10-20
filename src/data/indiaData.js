@@ -280,8 +280,266 @@ export const statesData = {
     fact: "Cherrapunji held the world record for most rainfall in a single year (26,461mm in 1861) and a single month — the living root bridges were built to withstand these monsoons.",
     color: "#4A8A5C",
     image: "/images/hero_bg.jpg"
+  },
+  "Arunachal Pradesh": {
+    region: "Northeast India",
+    capital: "Itanagar",
+    intro: "The Land of Dawn-lit Mountains is home to over 26 indigenous tribes, renowned for Apatani woven cane, Monpa wood carving, and ancient Buddhist gompas like Tawang.",
+    artForms: [
+      { name: "Monpa Wood Carving & Mask Making", desc: "Vibrant wooden ceremonial masks representing deities and spirits, carved from single blocks of wood." },
+      { name: "Apatani Cane & Bamboo Weaving", desc: "Geometric bamboo and cane architecture, baskets, and headgear woven with generational mastery." },
+      { name: "Wancho Woodcraft & Beads", desc: "Intricate wood statues and colorful glass bead necklaces recording clan history and folklore." }
+    ],
+    heritage: ["Tawang Monastery (India's Largest)", "Ziro Valley Pine Groves", "Namdapha National Park"],
+    fact: "Tawang Monastery was founded in 1680-1681 and is the second largest Buddhist monastery in the world after the Potala Palace in Lhasa.",
+    color: "#7E9A4D",
+    image: "/images/storytelling.jpg"
+  },
+  "Chandigarh": {
+    region: "North India",
+    capital: "Chandigarh",
+    intro: "A modernist architectural wonder designed by Le Corbusier, Chandigarh harmonizes urban grid architecture with Nek Chand's world-famous Rock Garden.",
+    artForms: [
+      { name: "Rock Garden Mosaic Sculptures", desc: "Visionary sculptures created from broken porcelain, bangles, and industrial scrap — a monument of recycled creativity." },
+      { name: "Modernist Concrete Murals", desc: "Brutalist bas-reliefs and tapestries designed by Le Corbusier for the Capitol Complex." },
+      { name: "Phulkari & Punjabi Craft", desc: "Vibrant geometric silk thread embroidery celebrating harvest and family celebrations." }
+    ],
+    heritage: ["Le Corbusier Capitol Complex (UNESCO)", "Nek Chand Rock Garden", "Sukhna Lake"],
+    fact: "Nek Chand spent nearly two decades secretly building the Rock Garden in a forest clearing using discarded ceramic, bangles, and urban debris.",
+    color: "#8DA399",
+    image: "/images/art_gallery.jpg"
+  },
+  "Chhattisgarh": {
+    region: "Central India",
+    capital: "Raipur",
+    intro: "A forested heartland boasting an unbroken 4,000-year metallurgy tradition — Dokra bell-metal lost-wax casting — alongside sacred tribal ritual arts.",
+    artForms: [
+      { name: "Dokra Bell Metal Craft", desc: "Ancient non-ferrous metal casting using the lost-wax technique to create tribal figurines, horses, and lamps." },
+      { name: "Bastar Wrought Iron (Loha Shilp)", desc: "Blacksmiths forge discarded iron into slender, evocative animal and human figurines using ancestral charcoal forges." },
+      { name: "Kosa Silk Weaving", desc: "Sturdy golden wild silk harvested from nature and spun into shimmering textiles with natural luster." }
+    ],
+    heritage: ["Sirpur Ancient Monuments", "Bastar Royal Palace & Tribal Villages", "Chitrakote Waterfalls"],
+    fact: "Bastar Dokra lost-wax metal casting uses the exact same metallurgical techniques discovered in the 4,500-year-old Dancing Girl bronze of Mohenjo-daro.",
+    color: "#C27A4E",
+    image: "/images/hero_bg.jpg"
+  },
+  "Dadra and Nagar Haveli": {
+    region: "West India",
+    capital: "Silvassa",
+    intro: "Lush green forests and tribal hamlets celebrated for Warli painting, musical folklore, and bamboo craftsmanship.",
+    artForms: [
+      { name: "Warli Tribal Art", desc: "Ritual wall paintings of weddings and nature using rice paste and chewing twig brushes." },
+      { name: "Tarpa Wind Instruments", desc: "Carved gourd and bamboo wind instruments played during harvest festival dances." },
+      { name: "Bamboo & Mat Weaving", desc: "Folk mats and fishing traps woven from wild bamboo strips." }
+    ],
+    heritage: ["Silvassa Tribal Cultural Museum", "Dudhni Lake", "Vanganga Lake Garden"],
+    fact: "Warli art here is considered ritualistic and protective, traditionally painted on freshly plastered mud walls before major harvest rites.",
+    color: "#8C9E5B",
+    image: "/images/storytelling.jpg"
+  },
+  "Daman and Diu": {
+    region: "West India",
+    capital: "Daman",
+    intro: "Historic Portuguese coastal fortresses meeting Arabian Sea maritime craft, shell artistry, and colonial architectural elegance.",
+    artForms: [
+      { name: "Portuguese-Indo Woodcraft", desc: "Carved wooden altars, balustrades, and colonial furniture." },
+      { name: "Sea Shell & Coral Craft", desc: "Intricate jewelry and decorative boxes fashioned from Arabian sea conch shells." },
+      { name: "Mat Weaving", desc: "Hand-plaited palm leaf mats with vibrant geometric border accents." }
+    ],
+    heritage: ["Diu Fortress & St. Paul's Church", "Moti Daman Fort", "Ghoghla Beach"],
+    fact: "Diu Fort, built in 1535 on the sea cliff, withstood major maritime sieges and remains one of Asia's best-preserved ocean stone fortresses.",
+    color: "#4A8296",
+    image: "/images/hero_bg.jpg"
+  },
+  "Delhi": {
+    region: "North India",
+    capital: "New Delhi",
+    intro: "The historic cradle of seven imperial dynasties, Delhi unites Mughal courtly miniature painting, Urdu calligraphy, and master goldsmithing.",
+    artForms: [
+      { name: "Zardozi Gold Embroidery", desc: "Opulent metallic thread embroidery using gold, silver, and pearls, patronized by Mughal courts." },
+      { name: "Mughal Calligraphy & Miniature", desc: "Illuminated Quranic and court manuscripts painted with microscopic precision and gemstone pigments." },
+      { name: "Meenakari Enamel Art", desc: "Vibrant glass enamel fused onto gold and silver jewelry in Chandni Chowk's ancient ateliers." }
+    ],
+    heritage: ["Red Fort (UNESCO)", "Qutub Minar (UNESCO)", "Humayun's Tomb (UNESCO)"],
+    fact: "Humayun's Tomb, built in 1570, was the first garden-tomb on the Indian subcontinent and provided the direct architectural blueprint for the Taj Mahal.",
+    color: "#C25D42",
+    image: "/images/art_gallery.jpg"
+  },
+  "Haryana": {
+    region: "North India",
+    capital: "Chandigarh",
+    intro: "The historic land of the Bhagavad Gita at Kurukshetra, famed for Panipat handlooms, brass casting, and colourful folk pottery.",
+    artForms: [
+      { name: "Panipat Durrie & Handloom", desc: "Sturdy geometric cotton and wool flat-woven rugs and tapestries." },
+      { name: "Rewari Brass & Metal Castings", desc: "Handcrafted traditional brass cookware, lamps, and ornamental water vessels." },
+      { name: "Clay & Terracotta Pottery", desc: "Painted earthen pots with ochre and white slip motifs for village festivals." }
+    ],
+    heritage: ["Brahma Sarovar, Kurukshetra", "Rakhigarhi Indus Valley Site", "Pinjore Mughal Gardens"],
+    fact: "Rakhigarhi in Haryana is the largest recognized urban metropolis of the ancient Indus Valley Civilization, dating back over 7,000 years.",
+    color: "#D4A054",
+    image: "/images/storytelling.jpg"
+  },
+  "Jharkhand": {
+    region: "East India",
+    capital: "Ranchi",
+    intro: "The 'Forest Region' is home to luminous indigenous mural arts — Sohrai and Khovar — rendered on village mud walls with wild mineral pigments.",
+    artForms: [
+      { name: "Sohrai & Khovar Painting (GI)", desc: "Sacred tribal mural paintings using comb-scraping and natural red, black, and white clay." },
+      { name: "Pyatkar Scroll Painting", desc: "One of India's oldest folk scroll traditions, narrating life after death and tribal epics." },
+      { name: "Chhau Dance Masks", desc: "Clay and paper-mache masks with exaggerated heroic expressions worn during martial dance rituals." }
+    ],
+    heritage: ["Baidyanath Dham, Deoghar", "Maluti Terracotta Temples", "Parasnath Hill (Shikharji)"],
+    fact: "Sohrai and Khovar wall art is created by women using simple broken combs, chewed twigs, and natural ochre to bless marriages and harvests.",
+    color: "#A87042",
+    image: "/images/art_gallery.jpg"
+  },
+  "Lakshadweep": {
+    region: "Island Territory",
+    capital: "Kavaratti",
+    intro: "An idyllic string of 36 coral atolls renowned for coconut coir tapestries, coral stone mosques, and oceanic maritime music.",
+    artForms: [
+      { name: "Coir & Coconut Fiber Weaving", desc: "Hand-braided golden coir ropes, mats, and maritime nets woven from seasoned coconut husks." },
+      { name: "Coral Stone Woodcarving", desc: "Intricate mosque timber ceilings carved from native timber and driftwood." },
+      { name: "Kolkali Folk Dance", desc: "Rhythmic stick dance accompanied by traditional ocean-faring ballads and drums." }
+    ],
+    heritage: ["Ujra Mosque, Kavaratti", "Minicoy Island Lighthouse", "Agatti Coral Lagoons"],
+    fact: "Kavaratti's 17th-century Ujra Mosque features an intricately carved wooden ceiling fashioned from driftwood without a single metal nail.",
+    color: "#2E999E",
+    image: "/images/hero_bg.jpg"
+  },
+  "Manipur": {
+    region: "Northeast India",
+    capital: "Imphal",
+    intro: "The 'Jeweled Land' is globally celebrated for classical Manipuri Raas Leela dance, wheel-less black stone pottery, and regal silk weaving.",
+    artForms: [
+      { name: "Longpi Black Stone Pottery", desc: "Ancient craft of molding pottery from crushed serpentinite rock and black clay by hand without a wheel." },
+      { name: "Manipuri Raas Leela Dance", desc: "Gentle, lyrical classical dance featuring bell-shaped Kumil skirts adorned with mirrors." },
+      { name: "Shaphee Lanphee Textile", desc: "Embroidered black and red ceremonial shawl displaying cosmic and celestial motifs." }
+    ],
+    heritage: ["Kangla Palace", "Loktak Lake (Floating Phumdis)", "Govindaji Temple"],
+    fact: "Longpi black pottery is burnished to a mirror sheen with leaves from local trees instead of synthetic glaze, and can be used directly on flame.",
+    color: "#9A4B7A",
+    image: "/images/storytelling.jpg"
+  },
+  "Mizoram": {
+    region: "Northeast India",
+    capital: "Aizawl",
+    intro: "Perched amidst mist-shrouded ridges, Mizoram is celebrated for dazzling geometric Puan handloom textiles, Cheraw bamboo dancing, and cane mastery.",
+    artForms: [
+      { name: "Puan Handloom Weaving", desc: "Intricate horizontal woven skirts and wraps featuring bold red, black, and white diamond motifs." },
+      { name: "Cheraw Bamboo Dance", desc: "A breathtaking dance where performers step gracefully in and out of clapping horizontal bamboo poles." },
+      { name: "Khang Cane Baskets", desc: "Fine woven bamboo carrying baskets engineered with waterproof rain-covers." }
+    ],
+    heritage: ["Reiek Heritage Village", "Vantawng Falls", "Dampa Sanctuary"],
+    fact: "The Cheraw bamboo dance was originally performed to ensure a safe passage for the soul of a mother who passed away during childbirth.",
+    color: "#4C8A6B",
+    image: "/images/hero_bg.jpg"
+  },
+  "Nagaland": {
+    region: "Northeast India",
+    capital: "Kohima",
+    intro: "Home to 16 proud indigenous tribes, Nagaland is renowned for its symbolic warrior textiles, glass beadwork, wood carvings, and the Hornbill Festival.",
+    artForms: [
+      { name: "Naga Tribal Shawls", desc: "Hand-woven backstrap loom shawls where each color, stripe, and symbol identifies the wearer's clan and status." },
+      { name: "Naga Wood Carving", desc: "Massive morung (bachelor dormitory) pillars and gates carved with hornbill birds, tigers, and human figures." },
+      { name: "Tribal Bead & Metal Jewelry", desc: "Carnelian beads, brass mini-masks, and cowrie shell necklaces worn in ceremonial dances." }
+    ],
+    heritage: ["Hornbill Festival Ground (Kisama)", "Kohima War Memorial", "Dzukou Valley"],
+    fact: "Each Naga shawl pattern is a visual coat of arms — designs like the Tsungkotepsu were traditionally earned through extraordinary communal valor.",
+    color: "#B8483B",
+    image: "/images/art_gallery.jpg"
+  },
+  "Puducherry": {
+    region: "South India",
+    capital: "Puducherry",
+    intro: "The French Riviera of the East, blending French colonial boulevards with Tamil architecture, handmade rag paper, and artistic ceramics.",
+    artForms: [
+      { name: "Auroville Ceramics & Stoneware", desc: "Contemporary glazed studio pottery and stoneware using local clays and wood-firing kilns." },
+      { name: "Handmade Cotton Rag Paper", desc: "High-grade tactile paper made at Sri Aurobindo Ashram mills from recycled 100% cotton scraps." },
+      { name: "Tiruvannamalai Bronze Casting", desc: "Chola-style cire perdue bronze sculptures of Hindu deities." }
+    ],
+    heritage: ["Auroville Matrimandir", "French Quarter (White Town)", "Sri Aurobindo Ashram"],
+    fact: "Auroville's Matrimandir sphere is coated in 1,414 concave gold-leaf tiles and houses the world's largest optically pure glass crystal.",
+    color: "#DE8E43",
+    image: "/images/storytelling.jpg"
+  },
+  "Tripura": {
+    region: "Northeast India",
+    capital: "Agartala",
+    intro: "An ancient royal kingdom showcasing the colossal rock-carvings of Unakoti, royal lake palaces, and exquisite bamboo craftsmanship.",
+    artForms: [
+      { name: "Bamboo Craft & Sculptures", desc: "Extraordinarily delicate woven mats, lampshades, and carved figures made from native muli bamboo." },
+      { name: "Risa Hand-Woven Textile", desc: "A colourful, hand-woven tribal chest cloth adorned with elaborate geometric thread motifs." },
+      { name: "Unakoti Rock-Cut Reliefs", desc: "Ancient 8th-9th century gigantic stone reliefs of Lord Shiva carved into living rock cliffs." }
+    ],
+    heritage: ["Unakoti Rock Carvings", "Neermahal Water Palace", "Ujjayanta Palace"],
+    fact: "Unakoti means 'one less than a crore' (9,999,999) in Bengali, referring to the legendary countless stone deities carved into its green hills.",
+    color: "#856696",
+    image: "/images/hero_bg.jpg"
+  },
+  "Uttarakhand": {
+    region: "North India",
+    capital: "Dehradun",
+    intro: "The Land of the Gods cradling the sacred Ganges source, famed for sacred Aipan floor painting, Ringal bamboo craft, and wooden temple architecture.",
+    artForms: [
+      { name: "Aipan Ritual Art", desc: "Geometric folk patterns painted with rice paste (Biswar) over a terracotta-red clay background to invite prosperity." },
+      { name: "Kumaoni Wood Carving", desc: "Intricately carved ornamental wooden doorways (Kholi) and window casements on traditional hill homes." },
+      { name: "Ringal Bamboo Weaving", desc: "Sturdy baskets and storage vessels hand-woven by artisan communities using high-altitude dwarf bamboo." }
+    ],
+    heritage: ["Valley of Flowers (UNESCO)", "Kedarnath & Badrinath Temples", "Nanda Devi Biosphere"],
+    fact: "Aipan floor drawings are made with the ring finger of the right hand without any stencils or rulers, handed down across generations of women.",
+    color: "#4C8A96",
+    image: "/images/art_gallery.jpg"
+  },
+  "Andaman and Nicobar Islands": {
+    region: "Island Territory",
+    capital: "Port Blair",
+    intro: "Pristine tropical islands holding Indigenous heritage, padauk timber craftsmanship, and the national freedom memorial of Cellular Jail.",
+    artForms: [
+      { name: "Padauk Woodcraft", desc: "Hand-carved trays, furniture, and sculptures crafted from rich red Andaman Padauk timber." },
+      { name: "Shell & Mother-of-Pearl Art", desc: "Carved mother-of-pearl lamps and ornamental tabletop artifacts from local sea shells." },
+      { name: "Nicobari Cane Weaving", desc: "Traditional ceremonial hats and mats woven from wild jungle cane." }
+    ],
+    heritage: ["Cellular Jail National Memorial", "Ross Island British Ruins", "Radhanagar Beach, Havelock"],
+    fact: "Andaman Padauk timber is renowned for its natural crimson shade and musical resonance; it was used to craft the furniture of Buckingham Palace.",
+    color: "#2C7D73",
+    image: "/images/storytelling.jpg"
   }
 };
+
+// Aliases mapping to handle variations in state naming
+const STATE_ALIASES = {
+  "jammu and kashmir": "Jammu & Kashmir",
+  "andaman and nicobar": "Andaman and Nicobar Islands",
+  "andaman & nicobar": "Andaman and Nicobar Islands",
+  "dadra and nagar haveli and daman and diu": "Dadra and Nagar Haveli",
+  "daman & diu": "Daman and Diu",
+  "dadra & nagar haveli": "Dadra and Nagar Haveli",
+  "orissa": "Odisha",
+  "uttaranchal": "Uttarakhand",
+  "pondicherry": "Puducherry"
+};
+
+export function getStateData(name) {
+  if (!name) return null;
+  if (statesData[name]) return statesData[name];
+
+  const lower = name.trim().toLowerCase();
+  if (STATE_ALIASES[lower] && statesData[STATE_ALIASES[lower]]) {
+    return statesData[STATE_ALIASES[lower]];
+  }
+
+  const clean = lower.replace(/&/g, 'and').replace(/\s+/g, ' ');
+  for (const [key, val] of Object.entries(statesData)) {
+    const kClean = key.toLowerCase().replace(/&/g, 'and').replace(/\s+/g, ' ');
+    if (kClean === clean || clean.includes(kClean) || kClean.includes(clean)) {
+      return val;
+    }
+  }
+
+  return null;
+}
+
 
 export const artFormsGallery = [
   {

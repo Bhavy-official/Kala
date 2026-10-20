@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import { statesData } from '../data/indiaData';
+import { statesData, getStateData } from '../data/indiaData';
 import IndiaMap from './IndiaMap';
 import StatePanel from './StatePanel';
 import './MapSection.css';
@@ -47,10 +47,13 @@ export default function MapSection() {
   }, []);
 
   const handleStateClick = (stateName) => {
-    if (statesData[stateName]) {
+    const data = getStateData(stateName);
+    if (data) {
       setSelectedState(stateName);
     }
   };
+
+  const selectedData = selectedState ? (getStateData(selectedState) || statesData[selectedState]) : null;
 
   return (
     <section ref={sectionRef} className="map-section" id="map-section">
@@ -101,11 +104,11 @@ export default function MapSection() {
         {/* Right — Panel */}
         <div className="panel-col">
           <AnimatePresence mode="wait">
-            {selectedState ? (
+            {selectedState && selectedData ? (
               <StatePanel
                 key={selectedState}
                 stateName={selectedState}
-                data={statesData[selectedState]}
+                data={selectedData}
                 onClose={() => setSelectedState(null)}
               />
             ) : (
