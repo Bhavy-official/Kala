@@ -56,7 +56,7 @@ export default function Footer() {
           </div>
           <div className="footer-meta">
             <span className="footer-copy">© 2026 KALĀ — The Living Art of India</span>
-            <span className="footer-note">College Project · Frontend Development</span>
+            <span className="footer-note">Indian Art Form</span>
             <button className="footer-back-top" onClick={scrollTop} id="footer-back-top-btn">
               ↑ Back to Top
             </button>

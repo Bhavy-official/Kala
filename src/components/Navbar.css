@@ -33,6 +33,28 @@
   user-select: none;
 }
 
+.wordmark-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.wordmark-author-badge {
+  font-size: 0.6rem;
+  color: var(--accent-gold-light);
+  border: 1px solid rgba(184, 154, 98, 0.35);
+  padding: 2px 8px;
+  border-radius: 12px;
+  background: rgba(184, 154, 98, 0.08);
+  letter-spacing: 0.12em;
+  transition: all 0.3s ease;
+}
+
+.navbar-wordmark:hover .wordmark-author-badge {
+  border-color: var(--accent-gold);
+  background: rgba(184, 154, 98, 0.15);
+}
+
 .wordmark-kala {
   font-family: var(--font-heading);
   font-size: 1.6rem;

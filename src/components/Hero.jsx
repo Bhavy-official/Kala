@@ -13,8 +13,6 @@ export default function Hero({ onExplore }) {
   const subRef = useRef(null);
   const ctaRef = useRef(null);
   const scrollHintRef = useRef(null);
-  const line1Ref = useRef(null);
-  const line2Ref = useRef(null);
 
   useEffect(() => {
     const ctx = gsap.context(() => {
@@ -27,18 +25,11 @@ export default function Hero({ onExplore }) {
         { clipPath: 'inset(0 0% 0 0)', scale: 1.04, duration: 1.6, ease: 'expo.inOut' }
       );
 
-      // Decorative lines
-      tl.fromTo([line1Ref.current, line2Ref.current],
-        { scaleX: 0 },
-        { scaleX: 1, duration: 0.8, stagger: 0.1, ease: 'power3.out', transformOrigin: 'left center' },
-        '-=0.8'
-      );
-
       // Label
       tl.fromTo(labelRef.current,
         { y: 20, opacity: 0 },
         { y: 0, opacity: 1, duration: 0.7, ease: 'power2.out' },
-        '-=0.5'
+        '-=0.6'
       );
 
       // Headline — word by word stagger
@@ -111,21 +102,14 @@ export default function Hero({ onExplore }) {
         <div className="hero-img-overlay" />
       </div>
 
-      {/* Decorative lines */}
-      <div className="hero-deco-lines">
-        <div ref={line1Ref} className="hero-deco-line" />
-        <div ref={line2Ref} className="hero-deco-line hero-deco-line--right" />
-      </div>
-
       {/* Content */}
       <div className="hero-content">
-        <div ref={labelRef} className="hero-label label-tag">An Atlas of Indian Culture</div>
+        <div ref={labelRef} className="hero-label label-tag">An Atlas of Indian Culture · By Bhavy Manchanda</div>
 
         <h1 ref={h1Ref} className="hero-headline">
           {words.map((w, i) => (
             <span key={i} className="hero-word-wrap">
               <span className="hero-word">{w}</span>
-              {i < words.length - 1 && ' '}
             </span>
           ))}
         </h1>

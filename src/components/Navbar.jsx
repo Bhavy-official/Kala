@@ -37,7 +37,10 @@ export default function Navbar() {
     <nav ref={navRef} className="navbar" id="navbar">
       <div className="navbar-inner">
         <div className="navbar-wordmark" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
-          <span className="wordmark-kala">KALĀ</span>
+          <div className="wordmark-row">
+            <span className="wordmark-kala">KALĀ</span>
+            <span className="wordmark-author-badge label-tag">By Bhavy Manchanda</span>
+          </div>
           <span className="wordmark-sub">Living Art of India</span>
         </div>
         <div className="navbar-links">

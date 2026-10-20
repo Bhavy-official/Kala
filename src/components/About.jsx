@@ -62,7 +62,7 @@ export default function About() {
               Crafted with reverence for India's living artistic traditions.
               <br />
               <span className="label-tag" style={{ marginTop: 8, display: 'block' }}>
-                Frontend College Project · KALĀ © 2026
+                Indian Art Form · KALĀ © 2026
               </span>
             </p>
           </div>
